@@ -91,7 +91,7 @@ namespace Students.App
             Console.WriteLine("Students in a system:");
             foreach (var item in StudentList.students)
             {
-                Console.WriteLine(item.ID + ". " + item.LastName + ", " + item.FirstName);
+                Console.WriteLine(item.ID + ". " + item.LastName + ", " + item.FirstName + " - " + item.Gpa);
             }
             Console.ReadLine();
         }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.App
+namespace Students.Code
 {
     /// <summary>
     /// Person properties class.
     /// </summary>
-    abstract class Person
+    public abstract class Person
     {
         /// <summary>
         /// First name of the person.

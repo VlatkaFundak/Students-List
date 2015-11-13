@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 
 
-namespace Project.App
+namespace Students.Code
 {
     /// <summary>
     /// Operation names.
     /// </summary>
-    static class Operations
+    static public class Operations
     {
         /// <summary>
         /// Enlist string constant.

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.App
+
+namespace Students.Code
 {
     /// <summary>
     /// Validation class.
     /// </summary>
-    class Validation
+    public class Validation
     {
         /// <summary>
         /// Validation of operation input.

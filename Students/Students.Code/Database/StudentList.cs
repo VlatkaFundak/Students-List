@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Project.App
+namespace Students.Code
 {
-    static class StudentList
+    static public class StudentList
     {
         /// <summary>
         /// Students.

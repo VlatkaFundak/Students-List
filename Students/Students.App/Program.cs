@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Students.Code;
 
-namespace Project.App
+namespace Students.App
 {
     class Program
     {

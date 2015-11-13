@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.App", "Project.App\Project.App.csproj", "{1BC0E6F4-983C-420E-BD52-BEE8EE17C535}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.App", "Students.App\Students.App.csproj", "{1BC0E6F4-983C-420E-BD52-BEE8EE17C535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Code", "Project.Code\Project.Code.csproj", "{6B1B8BE4-1C21-4CE1-A1C3-A27E19FC3E31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.Code", "Students.Code\Students.Code.csproj", "{6B1B8BE4-1C21-4CE1-A1C3-A27E19FC3E31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

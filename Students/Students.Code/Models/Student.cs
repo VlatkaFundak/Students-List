@@ -5,23 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-
-namespace Project.App
+namespace Students.Code
 {
     /// <summary>
     /// Students properties class.
     /// </summary>
-    class Student : Person
+    public class Student : Person
     {
         /// <summary>
         /// Gpa of student.
         /// </summary>
         public string Gpa { get; set; }
-
-        /// <summary>
-        /// Student constant.
-        /// </summary>
-        public string student = "Student";
 
         /// <summary>
         /// Student constructor.

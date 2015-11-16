@@ -12,6 +12,8 @@ namespace Students.Code
     /// </summary>
     public class Validation
     {
+        #region Public methods
+
         /// <summary>
         /// Validation of operation input.
         /// </summary>
@@ -70,6 +72,8 @@ namespace Students.Code
             else
                 return true;
         }
+
+        #endregion
 
     }
 }

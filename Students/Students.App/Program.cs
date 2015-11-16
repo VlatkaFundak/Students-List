@@ -27,6 +27,8 @@ namespace Students.App
             Console.ReadKey();
         }
 
+        #region Private methods
+
         /// <summary>
         /// Input of the user for enlisting.
         /// </summary>
@@ -66,7 +68,6 @@ namespace Students.App
 
             } while (!Validation.InputEmptySpaces(firstName));
 
-
             do
             {
                 Console.Write("Last name: ");
@@ -80,7 +81,7 @@ namespace Students.App
 
             } while (Validation.GPAInput(gpa));
 
-            StudentList.AddStudent(new Student(StudentIdGenerator.GeneratedId(), firstName, lastName, gpa));
+            StudentList.AddStudent(new Student(StudentIdGenerator.Instance.GeneratedId(), firstName, lastName, gpa));
         }
 
         /// <summary>
@@ -89,11 +90,17 @@ namespace Students.App
         static private void Display()
         {
             Console.WriteLine("Students in a system:");
-            foreach (var item in StudentList.students)
+
+            int i = 1;
+
+            foreach (var item in StudentList.SortedList())
             {
-                Console.WriteLine(item.ID + ". " + item.LastName + ", " + item.FirstName + " - " + item.Gpa);
+                Console.WriteLine(i + ". " + item.LastName + ", " + item.FirstName + " - " + item.Gpa);
+                i++;
             }
             Console.ReadLine();
         }
+
+        #endregion
     }
 }

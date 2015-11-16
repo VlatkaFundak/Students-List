@@ -7,17 +7,26 @@ using System.Threading.Tasks;
 
 namespace Students.Code
 {
+    /// <summary>
+    /// Student's list class.
+    /// </summary>
     static public class StudentList
     {
         /// <summary>
         /// Students.
         /// </summary>
         static public List<Student> students;
-                
+
+        #region Properties
+
         /// <summary>
         /// List of students.
         /// </summary>
         static public Student StudentContainer { get; set; }
+
+        #endregion
+
+        #region Public methods
 
         /// <summary>
         /// Adds student.
@@ -25,6 +34,7 @@ namespace Students.Code
         /// <param name="student"></param>
         static public void AddStudent(Student student)
         {
+            ListCheck();
             students.Add(student);
             StudentContainer = student;
         }
@@ -39,6 +49,21 @@ namespace Students.Code
                 students = new List<Student>();
             }
         }
+
+        /// <summary>
+        /// Sorts list by last name.
+        /// </summary>
+        /// <returns></returns>
+        static public List<Student> SortedList()
+        {
+            var sortedListByLastName = StudentList.students.OrderBy(student => student.LastName);
+
+            return sortedListByLastName.ToList();
+        }
+
+        #endregion
+
+
 
     }
 }

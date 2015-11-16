@@ -12,10 +12,16 @@ namespace Students.Code
     /// </summary>
     public class Student : Person
     {
+        #region Public properties
+
         /// <summary>
         /// Gpa of student.
         /// </summary>
         public string Gpa { get; set; }
+
+        #endregion
+
+        #region Constructor
 
         /// <summary>
         /// Student constructor.
@@ -31,6 +37,8 @@ namespace Students.Code
             this.LastName = lastName;
             this.Gpa = gpa;
         }
+
+        #endregion
     }
 }
 

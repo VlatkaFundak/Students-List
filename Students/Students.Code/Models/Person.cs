@@ -11,6 +11,7 @@ namespace Students.Code
     /// </summary>
     public abstract class Person
     {
+        #region Properties
         /// <summary>
         /// First name of the person.
         /// </summary>
@@ -25,5 +26,7 @@ namespace Students.Code
         /// ID of the student.
         /// </summary>
         public int ID { get; set; }
+
+        #endregion
     }
 }

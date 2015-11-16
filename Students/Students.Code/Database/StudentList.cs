@@ -12,17 +12,12 @@ namespace Students.Code
     /// </summary>
     static public class StudentList
     {
-        /// <summary>
-        /// Students.
-        /// </summary>
-        static public List<Student> students;
-
         #region Properties
 
         /// <summary>
         /// List of students.
         /// </summary>
-        static public Student StudentContainer { get; set; }
+        static public List<Student> StudentContainer { get; set; }
 
         #endregion
 
@@ -35,8 +30,7 @@ namespace Students.Code
         static public void AddStudent(Student student)
         {
             ListCheck();
-            students.Add(student);
-            StudentContainer = student;
+            StudentContainer.Add(student);
         }
 
         /// <summary>
@@ -44,9 +38,9 @@ namespace Students.Code
         /// </summary>
         static public void ListCheck()
         {
-            if (students == null)
+            if (StudentContainer == null)
             {
-                students = new List<Student>();
+                StudentContainer = new List<Student>();
             }
         }
 
@@ -56,7 +50,7 @@ namespace Students.Code
         /// <returns></returns>
         static public List<Student> SortedList()
         {
-            var sortedListByLastName = StudentList.students.OrderBy(student => student.LastName);
+            var sortedListByLastName = StudentContainer.OrderBy(student => student.LastName);
 
             return sortedListByLastName.ToList();
         }

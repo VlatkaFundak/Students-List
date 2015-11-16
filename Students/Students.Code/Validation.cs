@@ -24,10 +24,8 @@ namespace Students.Code
             switch (userInput.ToLower())
             {
                 case "enlist":
-                    userInput = Operations.enlist;
                     return true;
                 case "display":
-                    userInput = Operations.display;
                     return true;
                 default:
                     Console.WriteLine("You have typed non-existing operation, please try again:");

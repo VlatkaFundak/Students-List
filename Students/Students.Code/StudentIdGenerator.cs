@@ -43,7 +43,7 @@ namespace Students.Code
         {
             StudentList.ListCheck();
 
-            int i = StudentList.students.Count();
+            int i = StudentList.StudentContainer.Count();
             i++;
 
             return i;

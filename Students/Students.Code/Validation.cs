@@ -62,7 +62,7 @@ namespace Students.Code
         /// <returns>False if user entered empty space or null.</returns>
         static public bool InputEmptySpaces(string userInput)
         {
-            if (userInput == String.Empty || userInput == null)
+            if (String.IsNullOrEmpty(userInput))
             {
                 Console.WriteLine("You need to insert value.");
                 return false;

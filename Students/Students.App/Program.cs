@@ -95,7 +95,7 @@ namespace Students.App
 
             foreach (var item in StudentList.SortedList())
             {
-                Console.WriteLine(i + ". " + item.LastName + ", " + item.FirstName + " - " + item.Gpa);
+                Console.WriteLine("{0}. {1} , {2} - {3}", i, item.LastName, item.FirstName, item.Gpa);
                 i++;
             }
             Console.ReadLine();

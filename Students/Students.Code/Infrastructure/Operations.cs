@@ -11,7 +11,7 @@ namespace Students.Code
     /// <summary>
     /// Operation names.
     /// </summary>
-    static public class Operations
+    public static class Operations
     {
         /// <summary>
         /// Enlist string constant.

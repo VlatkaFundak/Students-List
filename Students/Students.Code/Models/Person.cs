@@ -25,8 +25,22 @@ namespace Students.Code
         /// <summary>
         /// ID of the student.
         /// </summary>
-        public int ID { get; set; }
+        public int ID { get; private set; }
 
         #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Person constructor.
+        /// </summary>
+        /// <param name="id">Id of the student.</param>
+        protected Person (int id)
+        {
+            this.ID = id;
+        }
+
+        #endregion
+
     }
 }

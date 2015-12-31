@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Students.Code
 {
     /// <summary>
-    /// Students properties class.
+    /// Student properties class.
     /// </summary>
     public class Student : Person
     {
@@ -26,13 +26,12 @@ namespace Students.Code
         /// <summary>
         /// Student constructor.
         /// </summary>
-        /// <param name="id">ID of the student.</param>
         /// <param name="firstName">First name of the student.</param>
         /// <param name="lastName">Last name of the student.</param>
         /// <param name="gpa">Gpa of the student.</param>
-        public Student(int id, string firstName, string lastName, string gpa)
+        public Student(string firstName, string lastName, string gpa)
+            : base(StudentIdGenerator.Instance.GeneratedId())
         {
-            this.ID = id;
             this.FirstName = firstName;
             this.LastName = lastName;
             this.Gpa = gpa;

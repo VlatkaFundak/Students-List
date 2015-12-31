@@ -12,45 +12,59 @@ namespace Students.Code
     /// </summary>
     static public class StudentList
     {
-        #region Properties
+        #region Fields
 
         /// <summary>
         /// List of students.
         /// </summary>
-        static public List<Student> StudentContainer { get; set; }
+        private static List<Student> studentContainer { get; set; }
 
         #endregion
 
         #region Public methods
 
         /// <summary>
+        /// Gets students.
+        /// </summary>
+        /// <returns>IEnumerable of students.</returns>
+        public static IEnumerable<Student> GetStudents()
+        {
+            IEnumerable<Student> studentList = (IEnumerable<Student>)studentContainer;
+            return studentList;
+        }
+
+        /// <summary>
         /// Adds student.
         /// </summary>
-        /// <param name="student"></param>
-        static public void AddStudent(Student student)
+        /// <param name="student">Student.</param>
+        public static void AddStudent(Student student)
         {
+            if  (student == null)
+            {
+                Console.WriteLine("Null value.");
+            }
             ListCheck();
-            StudentContainer.Add(student);
+            studentContainer.Add(student);
         }
 
         /// <summary>
         /// Creates a new list if it is null.
         /// </summary>
-        static public void ListCheck()
+        public static void ListCheck()
         {
-            if (StudentContainer == null)
+            if (studentContainer == null)
             {
-                StudentContainer = new List<Student>();
+                studentContainer = new List<Student>();
             }
         }
 
         /// <summary>
         /// Sorts list by last name.
         /// </summary>
-        /// <returns></returns>
-        static public List<Student> SortedList()
+        /// <returns>List of students.</returns>
+        public static List<Student> SortedList()
         {
-            var sortedListByLastName = StudentContainer.OrderBy(student => student.LastName);
+            var sortedListByLastName = studentContainer.OrderBy(student => student.LastName);
 
             return sortedListByLastName.ToList();
         }

@@ -41,9 +41,9 @@ namespace Students.Code
         /// <returns></returns>
         public int GeneratedId()
         {
-            StudentList.ListCheck();
+            StudentRepository.ListCheck();
 
-            int i = StudentList.StudentContainer.Count();
+            int i = StudentRepository.GetStudents().Count();
             i++;
 
             return i;
